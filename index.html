@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Profesional</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#0b1220;
+      color:#e5e7eb;
+    }
+
+    /* NAVBAR */
+    .navbar{
+      background:rgba(10,15,25,0.7);
+      backdrop-filter:blur(10px);
+    }
+
+    .nav-link{
+      color:#cbd5e1 !important;
+    }
+
+    .nav-link:hover{
+      color:#38bdf8 !important;
+    }
+
+    /* HERO */
+    .hero{
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      background: radial-gradient(circle at top,#1e293b,#0b1220);
+    }
+
+    .hero h1{
+      font-size:3rem;
+      font-weight:700;
+    }
+
+    .hero span{
+      color:#07ffff;
+    }
+
+    .btn-custom{
+      background:#38bdf8;
+      border:none;
+      padding:10px 20px;
+      border-radius:30px;
+      color:#000;
+      font-weight:600;
+    }
+
+    /* SECTION */
+    section{
+      padding:80px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      font-weight:700;
+      margin-bottom:50px;
+      font-size:2rem;
+    }
+
+/* CARD PROJECT - GANTI CARD-CUSTOM */
+.card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 15px;
+  transition: 0.3s;
+  overflow: hidden;
+  color: #e2e8f0; /* TAMBAHIN INI - BIAR SEMUA TEXT PUTIH */
+}
+
+/* TAMBAHIN BLOK INI DI BAWAHNYA */
+.card .card-title {
+  color: #38bdf8; /* JUDUL BIRU */
+}
+
+.card .card-text {
+  color: #cbd5e1; /* DESKRIPSI ABU TERANG */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56,189,248,0.2);
+}
+/* TABLE - TETEP JALAN */
+table{
+  color:#e5e7eb !important;
+}
+
+.table-dark{
+  background:#111827 !important;
+}
+
+/* FOOTER - TETEP JALAN */
+footer{
+  background:#020617;
+}
+
+/* PROFILE - TETEP JALAN */
+.profile-img{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  border:4px solid #38bdf8;
+  object-fit:cover;
+  margin-bottom:20px;
+}    
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold" href="#">⚡ Rozaan.FineShyt</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#matkul">Matkul</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="home" class="hero">
+  <div>
+    <img src="profile.jpeg" class="profile-img">
+    <h1><span>Rozaan Dzaki Akrami</span></h1>
+    <h1><span>Sistem Komputer</span></h1>
+    <h1><span>2514370042</span></h1>
+    <p class="lead">Mahasiswa • Web Developer • Future Entrepreneur</p>
+    <a href="#project" class="btn btn-custom mt-3">Lihat Project</a>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">Tentang Saya</h2>
+
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <div class="glass">
+        Halo! Saya Rozaan, mahasiswa yang lagi fokus belajar Web Development. 
+        Di portfolio ini saya udah bikin 3 project pake HTML, CSS, & JavaScript: Aplikasi Kalkulator, Game Snake Classic dengan sistem skor, dan To-Do List App yang datanya kesimpen otomatis pake localStorage.
+        Saya senang bikin antarmuka yang clean, responsif, dan fungsional. Target saya jadi Frontend Developer yang bisa bikin web interaktif.       
+       </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <i class="bi bi-code-slash" style="font-size:8rem;color:#38bdf8"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="project" style="background: #0c0c0c;">
+  <div class="container py-5">
+    <h2 class="section-title text-white mb-4">Project Saya</h2>
+    
+    <div class="row"> <!-- INI WAJIB BIAR JEJER -->
+      
+      <div class="col-md-4 mb-4">
+        <div class="card text-white h-100">
+          <div class="card-body">
+            <img src="images/kalkulator.png" class="img-fluid rounded mb-3" alt="Kalkulator">
+            <h5 class="card-title text-warning">Kalkulator</h5>
+            <p class="card-text">Aplikasi kalkulator +, -, x, ÷ pake Javascript</p>
+            <a href="kalkulator/index.html" class="btn btn-warning btn-sm">Lihat Demo</a>
+          </div>
+        </div>
+      </div>
+
+<!-- Card 2 - GAME ULAR VERSI SIMPEL -->
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark border-secondary h-100">
+          <img src="images/snake (2).png" class="card-img-top" alt="Game Ular">
+          <div class="card-body text-white">
+            <h5 class="card-title text-warning">Game Ular</h5>
+            <p class="card-text text-light">Game ular klasik buatan sendiri.</p>
+            <a href="gamela/ular.html" class="btn btn-warning btn-sm" target="_blank">Main Game</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 - TO DO LIST -->
+<div class="col-md-4 mb-4">
+  <div class="card bg-dark border-secondary h-100">
+    <img src="images/todo.png" class="card-img-top" alt="To Do List">
+    <div class="card-body text-white">
+      <h5 class="card-title text-warning">To-Do List Pro</h5>
+      <p class="card-text text-light">Aplikasi to-do list modern dengan filter & local storage.</p>
+      <a href="todo/todo.html" class="btn btn-warning btn-sm" target="_blank">Lihat Demo</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Kontak</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="glass">
+          <input class="form-control mb-3" placeholder="Nama">
+          <input class="form-control mb-3" placeholder="Email">
+          <textarea class="form-control mb-3" rows="4" placeholder="Pesan"></textarea>
+          <button class="btn btn-custom w-100">Kirim Pesan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATKUL -->
+<section id="matkul" style="background:#0f172a;">
+  <div class="container">
+    <h2 class="section-title">Mata Kuliah</h2>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-dark table-hover">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Mata Kuliah</th>
+            <th>SKS</th>
+            <th>Dosen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Pemrograman Web</td><td>4</td><td>Dr Afif Badawi, S.T., M.Kom.</td></tr>
+          <tr><td>2</td><td>Perancangan Sistem Digital</td><td>4</td><td>Dr Afif Badawi, S.T., M.Kom.</td></tr>
+          <tr><td>3</td><td>Sistem Operasi</td><td>2</td><td>Hendry, S.Kom., M.Kom.</td></tr>
+          <tr><td>4</td><td>Penghantar Internet Of Things</td><td>2</td><td>Ruly Dwi Arista, S.Kom., M.Kom.</td></tr>
+          <tr><td>5</td><td>Aljabar Linier dan Matriks</td><td>3</td><td>Hanna Willa Dhany, S.Kom., M.Kom.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center text-white py-3">
+  <p class="mb-0">© 2026 Rozaan Akrami • Built with Bootstrap</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
